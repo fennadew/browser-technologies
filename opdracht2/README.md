@@ -17,3 +17,7 @@ Beoordelingscriteria
   - Bronnen van uitleg en gebruikte artikelen.
   -	Welke browsers/devices ondersteunen deze wel/niet.
   -	Een beschrijving hoe de fallback werkt.
+
+
+RESOURCES
+* [Image placeholder](http://lwvnaperville.org/wp-content/uploads/2017/06/placeholder.png)
