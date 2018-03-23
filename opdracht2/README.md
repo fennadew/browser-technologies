@@ -1,23 +1,29 @@
 # Browser Technologies
 //Robuuste, toegankelijke websites leren bouwen …
 
-## Opdracht 2 - 1, 2, 3 Feature Detectie
-//Wat laat je zien als een browser of gebruiker 'enhancement' niet kan tonen of zien? Hoe doe je Feature Detection en wat doe je als een techniek niet werkt?
+Een beschrijving van het component.
+Een schets van de functionaliteit.
+Bronnen van uitleg en gebruikte artikelen.
+Welke browsers/devices ondersteunen deze wel/niet.
+Een beschrijving hoe je ervoor hebt gezorgd dat de Core Functionalitiet het overal doet.
 
-Werk 2 componenten uit in een demo. Je onderzoekt hoe je verschillende features door verschillende browsers worden ondersteund en hoe je voor goede fallback kan zorgen. Gebruik [html5test.com](https://html5test.com), [css3test.com](http://css3test.com) en [kangax.github.io/compat-table/es6/](https://kangax.github.io/compat-table/es6/)
+## Component 1: <b>FAQ lijst</b>
+Het eerste component is een vragenlijst over de verschillende minorvakken. Ik heb [whatwg]( https://html.spec.whatwg.org/multipage/interactive-elements.html#the-details-element) geraadpleegd om te onderzoeken welk element ik hier het beste voor kon gebruiken. Uiteindelijk heb ik gebruik gemaakt van het `<details></details>` Element samen met het `<summary></summery>` element.
+Het details element bevat een summary. Het summary element is altijd zichtbaar. Pas als het element wordt geopend (door er op te klikken) wordt te rest van de content zichtbaar. Dit is dus ideaal voor een FAQ.
+Het details element wordt door Internet Explorer en Edge niet ondersteund.
 
-- Per feature: Zoek uit hoe je deze kunt testen. Verzamel uitleg en artikelen. Bouw een (kleine) progressive enhanced demo (zonder extra tools, gewoon in 1 HTML file, zo simpel mogelijk). Test de feature (en fallback) op verschillende browsers en het Device Lab. Let op: Gebruik van polyfills is niet toegestaan.
-- Post je 2 demo’s op GitHub met uitleg in een README file. Wat is de feature? Welke browsers/devices ondersteunen deze wel/niet? Hoe zorg je dat de fallback nuttig is?
+![CanIuse details](https://github.com/fennadew/browser-technologies/blob/master/opdracht2/img/details.png).
 
-Beoordelingscriteria
-- 2 componenten zijn onderzocht en er is een demo gemaakt.
-- De code staat in een repository op GitHub.
-- Een Readme is toegevoegd met, per feature:
-  -	Een beschrijving van de feature.
-  - Bronnen van uitleg en gebruikte artikelen.
-  -	Welke browsers/devices ondersteunen deze wel/niet.
-  -	Een beschrijving hoe de fallback werkt.
+Ik heb daarom een fallback gemaakt in javascript. Deze fallback werkt tot IE9 en alle Edge versies. Op IE8 en ouder is een uitgeklapte versie te zien. Ook wanneer JavaScript het niet doet is de uitgeklapte versie te zien. Zo is de core functionaliteit voor iedereen beschikbaar.
+Ik heb dit getest met browserstack.
 
+
+
+## Component 2: <b>Image picker + preview</b>
+Voor als je een profiel foto wil uploaden naar je favoriete sociale netwerk
 
 RESOURCES
+* [Can I use](https://caniuse.com/)
+* [whatwg]( https://html.spec.whatwg.org/multipage/interactive-elements.html#the-details-element)
+* [Browserstack](https://www.browserstack.com/)
 * [Image placeholder](http://lwvnaperville.org/wp-content/uploads/2017/06/placeholder.png)
