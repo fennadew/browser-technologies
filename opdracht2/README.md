@@ -17,16 +17,18 @@ Het details element wordt door Internet Explorer en Edge niet ondersteund.
 
 ![CanIuse details](https://github.com/fennadew/browser-technologies/blob/master/opdracht2/img/details.png).
 
-Ik heb daarom een fallback gemaakt in javascript. Deze kijkt of het attribute 'open' bestaat in het details element. Wanneer dit niet het geval is, heb ik een fallback gemaakt. Deze fallback werkt tot IE9 en alle Edge versies. Op IE8 en ouder is een uitgeklapte versie te zien. Ook wanneer JavaScript het niet doet is de uitgeklapte versie te zien. Zo is de core functionaliteit voor iedereen beschikbaar.
+Ik heb daarom een fallback gemaakt in javascript. Deze kijkt of het attribute 'open' bestaat in het details element. Wanneer dit niet het geval is, heb ik een fallback gemaakt. Deze fallback werkt tot IE9 en alle Edge versies. Op IE8 en ouder is een uitgeklapte versie te zien.
+
+Ook wanneer JavaScript het niet doet is de uitgeklapte versie te zien. Zo is de core functionaliteit voor iedereen beschikbaar.
 Ik heb dit getest met browserstack. Als extra feature heb ik het automatisch sluiten van de vraag wanneer een ander wordt geopend toegevoegd. Dit werkt alleen met JavaScript.
 
-Chrome 64 (Mijn standaard browser)
+* <b>Chrome 64 (Mijn standaard browser)</b>
 ![Chrome](https://github.com/fennadew/browser-technologies/blob/master/opdracht2/img/chrome.png).
 
-IE10:
+* <b>IE10:</b>
 ![IE10](https://github.com/fennadew/browser-technologies/blob/master/opdracht2/img/ie10.png).
 
-IE8:
+* <b>IE8:</b>
 ![IE8](https://github.com/fennadew/browser-technologies/blob/master/opdracht2/img/ie8.png).
 
 
