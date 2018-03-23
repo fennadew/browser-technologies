@@ -45,6 +45,8 @@ Alleen ie11 ondersteund het gedeeltelijk niet. Ik heb een fallback gecreeërd di
 
 Ik heb op alle browsers (firefox, ie, safari) getest in browserstack. Ik heb mijn eigen browser gepakt voor de meeste enhanceste versie en gekeken tot welke internet explorer de image picker het doet. Deze laat ik zien om te demonstreren wat er gebeurd als er geen fileReader aanwezig is. Deze fallback werkt op elke browser.
 
+## Beide componenten <b>zonder JavaScript</b>
+![IE8](https://github.com/fennadew/browser-technologies/blob/master/opdracht2/img/nojs.png).
 
 RESOURCES
 * [Can I use](https://caniuse.com/)
