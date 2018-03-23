@@ -1,5 +1,5 @@
 # Browser Technologies
-Definitie feature detection:
+### Definitie feature detection:
 [Feature detection](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection) houdt in dat er wordt gecheckt of een browser een bepaald stuk code of element ondersteunt en of andere code daarvan afhankelijk is, zodat de browser altijd de core functionaliteit kan laten zien in plaats van te crashen / of fouten te geven in sommige browsers.
 
 ## Component 1: <b>FAQ lijst</b>
