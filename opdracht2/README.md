@@ -1,11 +1,4 @@
 # Browser Technologies
-//Robuuste, toegankelijke websites leren bouwen …
-
-Een beschrijving van het component.
-Een schets van de functionaliteit.
-Bronnen van uitleg en gebruikte artikelen.
-Welke browsers/devices ondersteunen deze wel/niet.
-Een beschrijving hoe je ervoor hebt gezorgd dat de Core Functionalitiet het overal doet.
 
 ## Component 1: <b>FAQ lijst</b>
 Het eerste component is een vragenlijst over de verschillende minorvakken. Ik heb [whatwg]( https://html.spec.whatwg.org/multipage/interactive-elements.html#the-details-element) geraadpleegd om te onderzoeken welk element ik hier het beste voor kon gebruiken.
@@ -36,10 +29,22 @@ Ik heb dit getest met browserstack. Als extra feature heb ik het automatisch slu
 Het tweede component is een image picker + preview voor als je een profiel foto wil uploaden naar je favoriete sociale netwerk. Als core functionaliteit heb ik alleen `<input type="file" accept="image/*">` toegevoegd in mijn html. Zo kan je altijd een plaatje toevoegen zonder de preview.
 
 Daarna ben ik gaan kijken hoe het een plaatje zou kunnen previewen. Ik heb hiervoor [Stackoverflow](https://stackoverflow.com/questions/4459379/preview-an-image-before-it-is-uploaded) geraadpleegd. Zo kwam ik uit op de API fileReader die standaard in (in de nieuwste versies) van JavaScript zit. Ik heb op [Can i use](https://caniuse.com/#search=FileReader) gekeken welke browsers fileReader ondersteunen.
+
 ![File reader can I use](https://github.com/fennadew/browser-technologies/blob/master/opdracht2/img/filereader.png).
 
+Alleen ie11 ondersteund het gedeeltelijk niet. Ik heb een fallback gecreeërd die kijkt of fileReader in het window object zit. Zo ja, dan voegt hij een placeholder image toe, en styling. De files die dan geupload worden kunnen nu gepreviewd worden d.m.v de fileReader API. Als JavaScript uit staat dan is de file upload button nog altijd beschikbaar zonder preview.
 
-Alleen ie11 ondersteund het gedeeltelijk niet. Ik heb een fallback gecreeërd die kijkt of fileReader in het window object zit. Zo ja, dan voegt hij een placeholder image toe, en styling. De files die dan geupload worden kunnen nu gepreviewd worden. Als JavaScript uit staat dan is de file upload button nog altijd beschikbaar zonder preview.
+* <b>Chrome 64 (Mijn standaard browser)</b>
+![Chrome](https://github.com/fennadew/browser-technologies/blob/master/opdracht2/img/chrome2.png).
+
+* <b>IE11:</b>
+![IE10](https://github.com/fennadew/browser-technologies/blob/master/opdracht2/img/ie11.png).
+
+* <b>IE9:</b>
+![IE8](https://github.com/fennadew/browser-technologies/blob/master/opdracht2/img/ie9.png).
+
+Ik heb op alle browsers (firefox, ie, safari) getest in browserstack. Ik heb mijn eigen browser gepakt voor de meeste enhanceste versie en gekeken tot welke internet explorer de image picker het doet. Deze laat ik zien om te demonstreren wat er gebeurd als er geen fileReader aanwezig is. Deze fallback werkt op elke browser.
+
 
 RESOURCES
 * [Can I use](https://caniuse.com/)
