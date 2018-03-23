@@ -1,4 +1,6 @@
 # Browser Technologies
+Definitie feature detection:
+[Feature detection](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection) houdt in dat er wordt gecheckt of een browser een bepaald stuk code of element ondersteunt en of andere code daarvan afhankelijk is, zodat de browser altijd de core functionaliteit kan laten zien in plaats van te crashen / of fouten te geven in sommige browsers.
 
 ## Component 1: <b>FAQ lijst</b>
 Het eerste component is een vragenlijst over de verschillende minorvakken. Ik heb [whatwg]( https://html.spec.whatwg.org/multipage/interactive-elements.html#the-details-element) geraadpleegd om te onderzoeken welk element ik hier het beste voor kon gebruiken.
@@ -50,6 +52,7 @@ Ik heb op alle browsers (firefox, ie, safari) getest in browserstack. Ik heb mij
 
 RESOURCES
 * [Can I use](https://caniuse.com/)
+* [Mozilla web docs](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection)
 * [Stackoverflow](https://stackoverflow.com/questions/4459379/preview-an-image-before-it-is-uploaded)
 * [whatwg]( https://html.spec.whatwg.org/multipage/interactive-elements.html#the-details-element)
 * [Browserstack](https://www.browserstack.com/)
