@@ -11,7 +11,7 @@ Een beschrijving hoe je ervoor hebt gezorgd dat de Core Functionalitiet het over
 Het eerste component is een vragenlijst over de verschillende minorvakken. Ik heb [whatwg]( https://html.spec.whatwg.org/multipage/interactive-elements.html#the-details-element) geraadpleegd om te onderzoeken welk element ik hier het beste voor kon gebruiken.
 
 Uiteindelijk heb ik gebruik gemaakt van het `<details></details>` Element samen met het `<summary></summary>` element.
-Het details element bevat een summary. Het summary element is altijd zichtbaar. Pas als het element wordt geopend (door er op te klikken) wordt te rest van de content zichtbaar. Dit is dus ideaal voor een FAQ.
+Het details element bevat een summary. Het summary element is altijd zichtbaar. Pas als het element wordt geopend (door er op te klikken) wordt te rest van de content zichtbaar. Dit is allemaal HTML only. Dit is dus ideaal voor een FAQ.
 
 Het details element wordt door Internet Explorer en Edge niet ondersteund.
 
@@ -33,10 +33,17 @@ Ik heb dit getest met browserstack. Als extra feature heb ik het automatisch slu
 
 
 ## Component 2: <b>Image picker + preview</b>
-Voor als je een profiel foto wil uploaden naar je favoriete sociale netwerk
+Het tweede component is een image picker + preview voor als je een profiel foto wil uploaden naar je favoriete sociale netwerk. Als core functionaliteit heb ik alleen `<input type="file" accept="image/*">` toegevoegd in mijn html. Zo kan je altijd een plaatje toevoegen zonder de preview.
+
+Daarna ben ik gaan kijken hoe het een plaatje zou kunnen previewen. Ik heb hiervoor [Stackoverflow](https://stackoverflow.com/questions/4459379/preview-an-image-before-it-is-uploaded) geraadpleegd. Zo kwam ik uit op de API fileReader die standaard in (in de nieuwste versies) van JavaScript zit. Ik heb op [Can i use](https://caniuse.com/#search=FileReader) gekeken welke browsers fileReader ondersteunen.
+![File reader can I use](https://github.com/fennadew/browser-technologies/blob/master/opdracht2/img/filereader.png).
+
+
+Alleen ie11 ondersteund het gedeeltelijk niet. Ik heb een fallback gecreeërd die kijkt of fileReader in het window object zit. Zo ja, dan voegt hij een placeholder image toe, en styling. De files die dan geupload worden kunnen nu gepreviewd worden. Als JavaScript uit staat dan is de file upload button nog altijd beschikbaar zonder preview.
 
 RESOURCES
 * [Can I use](https://caniuse.com/)
+* [Stackoverflow](https://stackoverflow.com/questions/4459379/preview-an-image-before-it-is-uploaded)
 * [whatwg]( https://html.spec.whatwg.org/multipage/interactive-elements.html#the-details-element)
 * [Browserstack](https://www.browserstack.com/)
 * [Image placeholder](http://lwvnaperville.org/wp-content/uploads/2017/06/placeholder.png)
