@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <style>
@@ -191,11 +191,12 @@
 
             if (!('open' in document.createElement('details'))) {
                 item.className += ' toggle';
-                item.addEventListener('click', (function (i, item) {
-                    return function () {
-                        toggleFaqOld(i, item);
-                    }
-                })(i, item));
+                if (document.addEventListener){
+                    item.addEventListener('click', (function (i, item) {
+                        return function () {
+                            toggleFaqOld(i, item);
+                        }
+                    })(i, item));                }
             } else {
                 item.addEventListener('click', (function (i) {
                     return function () {
