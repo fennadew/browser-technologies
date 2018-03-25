@@ -4,6 +4,12 @@
 ### Definitie feature detection:
 [Feature detection](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection) houdt in dat er wordt gecheckt of een browser een bepaald stuk code of element ondersteunt en of andere code daarvan afhankelijk is, zodat de browser altijd de core functionaliteit kan laten zien in plaats van te crashen / of fouten te geven in sommige browsers.
 
+## Feedback
+| Feedback                | Verbetering              |
+| ----------------------- |:------------------------:| 
+| Dingen in <head> weghalen die overbodig zijn  | Alle overbodige tekst in de viewport meta tag verwijderd |
+| Extra feature detection bij faq | Feature detection voor addeventlistner toegevoegd. |  
+
 ## Component 1: <b>FAQ lijst</b>
 Het eerste component is een vragenlijst over de verschillende minorvakken. Ik heb [whatwg]( https://html.spec.whatwg.org/multipage/interactive-elements.html#the-details-element) geraadpleegd om te onderzoeken welk element ik hier het beste voor kon gebruiken.
 
