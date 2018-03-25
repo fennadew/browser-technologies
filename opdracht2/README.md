@@ -8,7 +8,7 @@
 | Feedback                | Verbetering              |
 | ----------------------- |:------------------------| 
 | Dingen in `head` weghalen die overbodig zijn  | Alle overbodige tekst in de viewport meta tag verwijderd |
-| Extra feature detection bij faq | Feature detection voor addeventlistner toegevoegd. |  
+| Extra feature detection bij faq | Feature detection voor addeventlistner toegevoegd |  
 
 ## Component 1: <b>FAQ lijst</b>
 Het eerste component is een vragenlijst over de verschillende minorvakken. Ik heb [whatwg]( https://html.spec.whatwg.org/multipage/interactive-elements.html#the-details-element) geraadpleegd om te onderzoeken welk element ik hier het beste voor kon gebruiken.
