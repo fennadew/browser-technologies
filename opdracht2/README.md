@@ -7,7 +7,7 @@
 ## Feedback
 | Feedback                | Verbetering              |
 | ----------------------- |:------------------------:| 
-| Dingen in <head> weghalen die overbodig zijn  | Alle overbodige tekst in de viewport meta tag verwijderd |
+| Dingen in `head` weghalen die overbodig zijn  | Alle overbodige tekst in de viewport meta tag verwijderd |
 | Extra feature detection bij faq | Feature detection voor addeventlistner toegevoegd. |  
 
 ## Component 1: <b>FAQ lijst</b>
