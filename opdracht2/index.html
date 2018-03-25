@@ -190,13 +190,14 @@
             var item = faqItems[i];
 
             if (!('open' in document.createElement('details'))) {
-                item.className += ' toggle';
                 if (document.addEventListener){
+                    item.className += ' toggle';
                     item.addEventListener('click', (function (i, item) {
                         return function () {
                             toggleFaqOld(i, item);
                         }
-                    })(i, item));                }
+                    })(i, item));
+                }
             } else {
                 item.addEventListener('click', (function (i) {
                     return function () {
