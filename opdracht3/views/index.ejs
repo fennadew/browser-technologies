@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contactlijst</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+</head>
+<body>
+<section>
+    <header>
+        <h1>Contactlijst</h1>
+    </header>
+    <aside>
+        <form action="/" method="post">
+            <input type="text" name="name" placeholder="Zoek op naam">
+            <input type="submit" name="name" value="Zoeken">
+        </form>
+    </aside>
+    <ul>
+        <% for(var i = 0; i < contacts.length; i++) { %>
+        <li>
+            <a href="/<%= contacts[i].link %>">
+                <span><img src="<%= contacts[i].photo %>"></span><%= contacts[i].name %>
+            </a>
+        </li>
+        <% } %>
+    </ul>
+</section>
+<div>
+    <img class="mockup" src="/images/frame.png" alt="Iphone X mockup">
+</div>
+</body>
+</html>
