@@ -11,12 +11,12 @@
         <h1>Contactlijst</h1>
     </header>
     <aside>
-        <form action="/" method="post">
-            <input type="text" name="name" placeholder="Zoek op naam">
-            <input type="submit" name="name" value="Zoeken">
+        <form id="form-contacts" action="/" method="post">
+            <input id="input-name" type="text" name="name" placeholder="Zoek op naam">
+            <input id="submit" type="submit" name="name" value="Zoeken">
         </form>
     </aside>
-    <ul>
+    <ul id="contacts">
         <% for(var i = 0; i < contacts.length; i++) { %>
         <li>
             <a href="/<%= contacts[i].link %>">
@@ -29,5 +29,6 @@
 <div>
     <img class="mockup" src="/images/frame.png" alt="Iphone X mockup">
 </div>
+<script src="/javascripts/main.js"></script>
 </body>
 </html>

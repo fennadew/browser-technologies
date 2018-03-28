@@ -41,6 +41,17 @@ h1 {
   text-transform: uppercase;
 }
 
+form.enriched input[type="submit"] {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+form.enriched input {
+  width: 100%;
+}
 
 header a {
   position: absolute;
