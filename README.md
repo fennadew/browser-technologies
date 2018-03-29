@@ -50,6 +50,16 @@ Als tweede feature heb ik toegevoegd dat hij niet kijkt naar de hele string, maa
 * <b>Chrome 64 (Met JavaScript)</b>
 (![Chrome](https://github.com/fennadew/browser-technologies/blob/deploy/public/images/metjs.png).
 
+Ook heb nog nog een blur effect toegevoegd zodat je lijst niet de hard wordt afgeknipt tijdens het scrollen.
+Dit wordt door 64.26% van de browsers ondersteund omdat het gepaard moet gaan met de css functie pointer-events.
+Dit heb ik gedaan om een box-shadow of de :before te zetten en de before z-index 1 te geven.
+Dan heb ik met css pointer-events: none gedaan zodat er nog steeds gescrollt kan worden.
+Ik heb deze daarom in een @support gestopt zodat alle browsers die de pointer events niet ondersteunen,
+of support niet ondersteunen, geen boxshadow kunnen zien.
+
+* <b>Chrome 64 (Met JavaScript)</b>
+(![Chrome](https://github.com/fennadew/browser-technologies/blob/deploy/public/images/blur.png).
+
 ### Accessibility: features
 
 Beoordelingscriteria
