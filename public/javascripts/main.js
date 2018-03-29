@@ -25,7 +25,7 @@
             for (var i = 0; i < names.length; i++) {
                 var name = names[i].innerText.toLowerCase();
                 if (!String.prototype.startsWith) {
-                    if (name.innerHTML.toLowerCase().indexOf(inputNew) > -1) {
+                    if (name.indexOf(inputNew) > -1) {
                         names[i].parentNode.setAttribute('class', '')
                     } else {
                         names[i].parentNode.setAttribute('class', 'hidden')
