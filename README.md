@@ -28,7 +28,17 @@ De gehele content bekijken + filteren is mogelijk op alle browsers. Het support 
 
 ![IE8](https://github.com/fennadew/browser-technologies/blob/deploy/public/images/ie8.png).
 
+#### Accessibility
+* <b>Mouse/Trackpad</b>: Op alle aanklikbare elementen zijn hover en focus states toegepast.
+* <b>Custom fonts</b>: Er worden geen icon-fonts gebruikt en er wordt een fallback-lettertype gebruikt. Dit lettertype zie je wanneer de custom font niet kan worden geladen of custom fonts door de gebruiker zijn uitgeschakeld.
+Ik heb deze getest op aangepaste aangepaste lettertypen met de Chrome-extensie[force fonts](https://chrome.google.com/webstore/detail/force-font/iidenkflofaiinggabfmdjbomolidnie).erkt hetzelfde zonder aangepaste lettertypen. Met de extensie kun je het aangepaste lettertype vervangen door het gewenste systeemlettertype zoals 'Arial'.
 
+![custom](https://github.com/fennadew/browser-technologies/blob/deploy/public/images/customfonts.png).
+
+* <b>Images</b>: Alle images hebben een alt attribute. Deze hebben toegevoegde waarde wanneer deze door de screenreader wordt voorgelezen.
+* <b>Color</b>: Er is voornamelijk gebruik gemaakt van zwart en wit. Dit is goed te zien voor kleurenblinden.
+de focus state is grijs, waar de kleurenblinden dus ook geen last van zullen hebben. Het paars van de sumbit button en het de border van het input veldt is donker genoeg om genoeg contrast te bieden bij rood kleurenblindheid.
+* <b>Broadband internet</b>:
 ### Progressive enhancement: features
 
 #### Feature 1
@@ -68,7 +78,6 @@ of support niet ondersteunen, geen boxshadow kunnen zien.
 
 ![Chrome](https://github.com/fennadew/browser-technologies/blob/deploy/public/images/blur.png).
 
-### Accessibility: features
 
 Beoordelingscriteria
 - De code staat in een repository op GitHub
