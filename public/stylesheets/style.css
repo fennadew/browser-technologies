@@ -32,7 +32,7 @@ div {
 }
 
 h1 {
-    margin-top: 56px;
+    margin-top: 30px;
     font-size: 14px;
     color: #222;
     font-weight: 700;
@@ -55,14 +55,14 @@ form.enriched input {
 
 header a {
     position: absolute;
-    top: 47px;
+    top: 22px;
     padding: 10px;
     left: 5px;
 }
 
-ul {
+#contacts {
     overflow: scroll;
-    height: 500px;
+    height: 542px;
     padding: 0;
     margin-top: 0;
     background: #FFF;
@@ -74,7 +74,7 @@ ul {
         z-index: 1;
         display: block;
         position: absolute;
-        top: 144px;
+        top: 118px;
         left: 0;
         right: 0;
         margin: auto;
@@ -84,8 +84,7 @@ ul {
         inset 0px -20px 30px -10px #FFF;
         -moz-box-shadow: inset 0px 20px 30px -10px #FFF,
         inset 0px -20px 30px -10px #FFF;
-        width: 290px;
-        height: 503px;
+        height: 545px;
         pointer-events: none;
     }
 }
@@ -147,13 +146,20 @@ input[type=submit]:focus, input[type=submit]:hover {
     cursor: pointer;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+}
+
 section {
     position: absolute;
     overflow: hidden;
     left: 0;
     right: 0;
     width: 320px;
-    margin: auto;
+    height: 661px;
+    margin: 20px auto 0;
+    border: 1px solid #f2f2f2;
 }
 
 a {
