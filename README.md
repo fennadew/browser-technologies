@@ -37,7 +37,7 @@ Als feature heb ik toegevoegd dat hij automatisch filtert wanneer de input value
 | IE9, IE10, IE11, Edge| last 2 versions| last 2 versions| last 2 versions| last 2 versions| last 2 versions| last 2 versions
 
 * <b>IE9:</b>
-![IE8](https://github.com/fennadew/browser-technologies/blob/master/opdracht2/img/ie9.png).
+![IE8](https://github.com/fennadew/browser-technologies/blob/deploy/public/images/ie9.png).
 
 Als tweede feature heb ik toegevoegd dat hij niet kijkt naar de hele string, maar alleen of het begin van de string klopt met de input value. Je begint immers met het zoeken van een naam altijd bij de eerste letters en je verwacht niet dat als je A intypt dat er dan allemaal mensen verschijnen die a's in hun naam hebben, maar alleen degene waarvan de naam met een A begint. Dit is mogelijk met de nieuwste ES6 feature String.protoype.startsWith. Hier heb ik ook een feature detection voor aangemaakt. Wanneer hij dit ondersteund zal hij de input value vergelijken met de eerste letters van alle contacten.
 
@@ -48,7 +48,7 @@ Als tweede feature heb ik toegevoegd dat hij niet kijkt naar de hele string, maa
 | Edge| last 2 versions| last 2 versions| last 2 versions| last 2 versions| last 2 versions| last 2 versions
 
 * <b>Chrome 64 (Met JavaScript)</b>
-![IE8](https://github.com/fennadew/browser-technologies/blob/master/opdracht2/img/metjs.png).
+(![Chrome](https://github.com/fennadew/browser-technologies/blob/deploy/public/images/metjs.png).
 
 ### Accessibility: features
 
