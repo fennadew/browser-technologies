@@ -8,7 +8,7 @@ body {
 }
 
 a {
-    color: #00B7FF;
+    outline: none;
 }
 
 .mockup {
@@ -57,24 +57,43 @@ header a {
     position: absolute;
     top: 47px;
     padding: 10px;
-    left: 15px;
+    left: 5px;
 }
 
 ul {
     overflow: scroll;
-    height: 490px;
+    height: 500px;
     padding: 0;
+    margin-top: 0;
     background: #FFF;
+}
+
+@supports ( pointer-events: none ) {
+   #contacts:before {
+        content: '';
+        z-index: 1;
+        display: block;
+        position: absolute;
+        top: 144px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        box-shadow: inset 0px 20px 30px -10px #FFF,
+        inset 0px -20px 30px -10px #FFF;
+        -webkit-box-shadow: inset 0px 20px 30px -10px #FFF,
+        inset 0px -20px 30px -10px #FFF;
+        -moz-box-shadow: inset 0px 20px 30px -10px #FFF,
+        inset 0px -20px 30px -10px #FFF;
+        width: 290px;
+        height: 503px;
+        pointer-events: none;
+    }
 }
 
 li {
     line-height: 60px;
     list-style: none;
     border-bottom: 1px #f2f2f2 solid;
-}
-
-figure + ul li {
-    padding: 0 16px;
 }
 
 ul a img {
@@ -91,14 +110,13 @@ a span {
 }
 
 aside {
-    background-color: #f2f2f2;
-    padding: 16px 16px;
+    padding: 10px 16px;
 }
 
 input {
     height: 40px;
     width: 70%;
-    border-radius: 5px;
+    border-radius: 40px;
     padding: 0 15px;
     font-size: 14px;
     outline: none;
@@ -116,7 +134,6 @@ figure {
 }
 
 input[type=submit] {
-    border-radius: 5px;
     width: 80px;
     background: #536DFE;
     color: #FFF;
@@ -132,6 +149,7 @@ input[type=submit]:focus, input[type=submit]:hover {
 
 section {
     position: absolute;
+    overflow: hidden;
     left: 0;
     right: 0;
     width: 320px;
@@ -146,6 +164,11 @@ a {
     color: #222;
     line-height: 60px;
     font-weight: 300;
+    transition: background-color 200ms ease;
+}
+
+a:focus, a:hover {
+    background-color: #f2f2f2;
 }
 
 span {

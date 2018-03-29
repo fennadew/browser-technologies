@@ -14,10 +14,10 @@
     <figure><img src="<%= contact.photo %>" alt="photo of <%= contact.name %>"></figure>
     <ul>
         <li>
-            <%= contact.phone %>
+            <a href="tel:<%= contact.phone %>"><%= contact.phone %></a>
         </li>
         <li>
-            <%= contact.email %>
+            <a href="mailto:<%= contact.email %>"><%= contact.email %></a>
         </li>
     </ul>
 </section>
