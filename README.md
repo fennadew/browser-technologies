@@ -10,7 +10,7 @@ Ik heb gekozen voor Node.js zodat ik server side data kan ophalen en kan rendere
 
 De basis is dan een form waar een naam kan worden ingetypt en gesubmit kan worden.
 Het formulier doet dan een post request naar de server en de server geeft een nieuwe pagina terug met de resultaten.
-Dit alles is allemaal zonder JavaScript.
+Dit alles is allemaal zonder JavaScript. Dit heb ik onderzocht op [canIuse](caniuse.com).
 
 De gehele content bekijken + filteren is mogelijk op alle browsers. Het support is 100%.
 
@@ -36,7 +36,7 @@ De gehele content bekijken + filteren is mogelijk op alle browsers. Het support 
 ![screenreader](https://github.com/fennadew/browser-technologies/blob/deploy/public/images/screenreader.png).
 
 * <b>Custom fonts</b>: Er worden geen icon-fonts gebruikt en er wordt een fallback-lettertype gebruikt. Dit lettertype zie je wanneer de custom font niet kan worden geladen of custom fonts door de gebruiker zijn uitgeschakeld.
-Ik heb deze getest op aangepaste aangepaste lettertypen met de Chrome-extensie[force fonts](https://chrome.google.com/webstore/detail/force-font/iidenkflofaiinggabfmdjbomolidnie).erkt hetzelfde zonder aangepaste lettertypen. Met de extensie kun je het aangepaste lettertype vervangen door het gewenste systeemlettertype zoals 'Arial'.
+Ik heb deze getest op aangepaste aangepaste lettertypen met de Chrome-extensie [force fonts](https://chrome.google.com/webstore/detail/force-font/iidenkflofaiinggabfmdjbomolidnie). Werkt hetzelfde zonder aangepaste lettertypen. Met de extensie kun je het aangepaste lettertype vervangen door het gewenste systeemlettertype zoals 'Arial'.
 
 ![custom](https://github.com/fennadew/browser-technologies/blob/deploy/public/images/customfonts.png).
 
@@ -63,12 +63,13 @@ Als feature heb ik toegevoegd dat hij automatisch filtert wanneer de input value
 | --------- | --------- | --------- | --------- | --------- | --------- | --------- |
 | IE9, IE10, IE11, Edge| last 2 versions| last 2 versions| last 2 versions| last 2 versions| last 2 versions| last 2 versions
 
+Getest in [Browserstack](https://www.browserstack.com)
 * <b>IE9:</b>
 
 ![IE8](https://github.com/fennadew/browser-technologies/blob/deploy/public/images/ie9.png).
 
 #### Feature 2
-Als tweede feature heb ik toegevoegd dat hij niet kijkt naar de hele string, maar alleen of het begin van de string klopt met de input value. Je begint immers met het zoeken van een naam altijd bij de eerste letters en je verwacht niet dat als je A intypt dat er dan allemaal mensen verschijnen die a's in hun naam hebben, maar alleen degene waarvan de naam met een A begint. Dit is mogelijk met de nieuwste ES6 feature String.protoype.startsWith. Hier heb ik ook een feature detection voor aangemaakt. Wanneer hij dit ondersteund zal hij de input value vergelijken met de eerste letters van alle contacten.
+Als tweede feature heb ik toegevoegd dat hij niet kijkt naar de hele string, maar alleen of het begin van de string klopt met de input value. Je begint immers met het zoeken van een naam altijd bij de eerste letters en je verwacht niet dat als je A intypt dat er dan allemaal mensen verschijnen die a's in hun naam hebben, maar alleen degene waarvan de naam met een A begint. Dit is mogelijk met de nieuwste ES6 feature String.protoype.startsWith. Ik heb deze onderzocht bij [Mozilla developers](https://developer.mozilla.org/nl/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith). Hier heb ik ook een feature detection voor aangemaakt. Wanneer hij dit ondersteund zal hij de input value vergelijken met de eerste letters van alle contacten.
 
 #### Browsers support <sub><sup><sub><sub>made by <a href="https://godban.github.io">godban</a></sub></sub></sup></sub>
 
