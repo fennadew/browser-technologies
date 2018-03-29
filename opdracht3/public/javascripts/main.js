@@ -9,6 +9,10 @@
                     input.addEventListener('keyup', function (e) {
                         filterContacts(this.value);
                     });
+                    form.addEventListener('submit', function (e) {
+                        e.preventDefault();
+                    });
+
                 }
             }
         };
@@ -22,8 +26,6 @@
                 var name = names[i].innerText.toLowerCase();
                 if (!String.prototype.startsWith) {
                     if (name.innerHTML.toLowerCase().indexOf(inputNew) > -1) {
-                        articles[i].style.display = "";
-                    } else if (name.innerHTML.toLowerCase().indexOf(inputNew) > -1) {
                         names[i].parentNode.setAttribute('class', '')
                     } else {
                         names[i].parentNode.setAttribute('class', 'hidden')
