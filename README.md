@@ -2,6 +2,7 @@
 ## Opdracht 3 - Progressive Enhanced Browser Technologies
 
 ### Use case: <b>Ik wil in een lijst contacten kunnen filteren, en details kunnen bekijken</b>
+
 ### Core functionality
 De gebruiker moet een lijst met contacten kunnen zien, hier op filteren en contacten bekijken.
 Ik heb gekozen voor Node.js zodat ik server side data kan ophalen en kan renderen.
@@ -17,7 +18,6 @@ De gehele content bekijken + filteren is mogelijk op alle browsers. Het support 
 | [<img src="https://raw.githubusercontent.com/godban/browsers-support-badges/master/src/images/edge.png" alt="IE / Edge" width="16px" height="16px" />](http://godban.github.io/browsers-support-badges/)</br>IE / Edge | [<img src="https://raw.githubusercontent.com/godban/browsers-support-badges/master/src/images/firefox.png" alt="Firefox" width="16px" height="16px" />](http://godban.github.io/browsers-support-badges/)</br>Firefox | [<img src="https://raw.githubusercontent.com/godban/browsers-support-badges/master/src/images/chrome.png" alt="Chrome" width="16px" height="16px" />](http://godban.github.io/browsers-support-badges/)</br>Chrome | [<img src="https://raw.githubusercontent.com/godban/browsers-support-badges/master/src/images/safari.png" alt="Safari" width="16px" height="16px" />](http://godban.github.io/browsers-support-badges/)</br>Safari | [<img src="https://raw.githubusercontent.com/godban/browsers-support-badges/master/src/images/opera.png" alt="Opera" width="16px" height="16px" />](http://godban.github.io/browsers-support-badges/)</br>Opera | [<img src="https://raw.githubusercontent.com/godban/browsers-support-badges/master/src/images/safari-ios.png" alt="iOS Safari" width="16px" height="16px" />](http://godban.github.io/browsers-support-badges/)</br>iOS Safari | [<img src="https://raw.githubusercontent.com/godban/browsers-support-badges/master/src/images/opera-mini.png" alt="Opera Mini" width="16px" height="16px" />](http://godban.github.io/browsers-support-badges/)</br>Opera Mini | [<img src="https://raw.githubusercontent.com/godban/browsers-support-badges/master/src/images/chrome-android.png" alt="Chrome for Android" width="16px" height="16px" />](http://godban.github.io/browsers-support-badges/)</br>Chrome for Android |
 | --------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- |
 | IE7, IE8, IE9, IE10, IE11, Edge| last 2 versions| last 2 versions| last 2 versions| last 2 versions| last 2 versions| last 2 versions| last 2 versions
-
 
 * <b>Chrome 64 (Zonder javascript)</b>
 
@@ -35,10 +35,16 @@ Ik heb deze getest op aangepaste aangepaste lettertypen met de Chrome-extensie[f
 
 ![custom](https://github.com/fennadew/browser-technologies/blob/deploy/public/images/customfonts.png).
 
-* <b>Images</b>: Alle images hebben een alt attribute. Deze hebben toegevoegde waarde wanneer deze door de screenreader wordt voorgelezen.
+* <b>Images</b>: Alle images hebben een alt attribute. Deze hebben toegevoegde waarde wanneer deze door de screenreader wordt voorgelezen. De website is getest met een screenreader.
+
+![screenreader](https://github.com/fennadew/browser-technologies/blob/deploy/public/images/screenreader.png).
+
 * <b>Color</b>: Er is voornamelijk gebruik gemaakt van zwart en wit. Dit is goed te zien voor kleurenblinden.
 de focus state is grijs, waar de kleurenblinden dus ook geen last van zullen hebben. Het paars van de sumbit button en het de border van het input veldt is donker genoeg om genoeg contrast te bieden bij rood kleurenblindheid.
-* <b>Broadband internet</b>:
+
+* <b>JavaScript</b>: De core functionaliteit van de website werkt geheel zonder JavaScript
+
+
 ### Progressive enhancement: features
 
 #### Feature 1
