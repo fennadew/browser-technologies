@@ -25,6 +25,7 @@ De gehele content bekijken + filteren is mogelijk op alle browsers. Het support 
 ![Chrome](https://github.com/fennadew/browser-technologies/blob/deploy/public/images/zonderjs.png).
 ![Chrome](https://github.com/fennadew/browser-technologies/blob/deploy/public/images/zonderjs2.png).
 
+Getest in [Browserstack](https://www.browserstack.com)
 * <b>IE8:</b>
 
 ![IE8](https://github.com/fennadew/browser-technologies/blob/deploy/public/images/ie8.png).
@@ -55,7 +56,7 @@ de focus state is grijs, waar de kleurenblinden dus ook geen last van zullen heb
 ### Progressive enhancement: features
 
 #### Feature 1
-Als feature heb ik toegevoegd dat hij automatisch filtert wanneer de input value veranderd. Hier is de API addEventlistner voor nodig. Omdat deze niet in alle browsers ondersteund wordt (98%), heb ik hier een feature detection voor aangemaakt. Wanneer deze aanwezig is wordt de submit knop weggehaald omdat deze niet meer nodig is en wordt er gekeken of de input value matched met een deel van de naam.
+Als feature heb ik toegevoegd dat hij automatisch filtert wanneer de input value veranderd. Hier is de API addEventlistner voor nodig. Ik heb deze feature onderzocht op [canIuse](caniuse.com). Omdat deze niet in alle browsers ondersteund wordt (98%), heb ik hier een feature detection voor aangemaakt. Wanneer deze aanwezig is wordt de submit knop weggehaald omdat deze niet meer nodig is en wordt er gekeken of de input value matched met een deel van de naam.
 
 #### Browsers support <sub><sup><sub><sub>made by <a href="https://godban.github.io">godban</a></sub></sub></sup></sub>
 
