@@ -1,19 +1,39 @@
 # Browser Technologies
-//Robuuste, toegankelijke websites leren bouwen …
+## Opdracht 3 - Progressive Enhanced Browser Technologies
 
-In het vak Browser Technologies leer je hoe je goede, robuuste, toegankelijke websites maakt.
-Je gaat leren over Progressive Enhancement, Feature Detection en Fallback. Het web is er voor iedereen.
-In dit vak leer je hoe je daarvoor kan zorgen.
+### Use case: <b>Ik wil in een lijst contacten kunnen filteren, en details kunnen bekijken</b>
+### Core functionality
+De gebruiker moet een lijst met contacten kunnen zien, hier op filteren en contacten bekijken.
+Ik heb gekozen voor Node.js zodat ik server side data kan ophalen en kan renderen.
 
-Een van de mooiste principes van het web is dat het er echt is voor iedereen.
-Iedereen met een computer en een browser moet gebruik kunnen maken van het web.
-Het web is geen gecontroleerde (programmeer) omgeving.
-Je kan er gerust van uit gaan dat niemand precies hetzelfde te zien krijgt als wat jij ziet in jouw browser.
-Er zijn natuurlijk de technische beperkingen. Zoals - Afmetingen van de browser - Grootte van het apparaat - Manier van interactie - Kwaliteit van de hardware - Kwaliteit van het netwerk. En er zijn mensen. Allemaal verschillende mensen ...
+De basis is dan een form waar een naam kan worden ingetypt en gesubmit kan worden.
+Het formulier doet dan een post request naar de server en de server geeft een nieuwe pagina terug met de resultaten.
+Dit alles is allemaal zonder JavaScript.
 
+De gehele content bekijken + filteren is mogelijk op alle browsers. Het support is 100%.
 
-Het vak bestaat uit 3 opdrachten:
+## Browsers support <sub><sup><sub><sub>made by <a href="https://godban.github.io">godban</a></sub></sub></sup></sub>
 
-1. [Het web is voor iedereen. Leren over Progressive enhancement](/opdracht1)
-2. [Wat laat je zien als een browser of gebruiker 'enhancement' niet kan tonen of zien? Hoe doe je Feature Detection en wat doe je als een techniek niet werkt?](/opdracht2)
-3. [Browser Technologies onderzoeken en implementeren als enhancement. Basic functionaliteit van een use case doorgronden.](/opdracht3)
+| [<img src="https://raw.githubusercontent.com/godban/browsers-support-badges/master/src/images/edge.png" alt="IE / Edge" width="16px" height="16px" />](http://godban.github.io/browsers-support-badges/)</br>IE / Edge | [<img src="https://raw.githubusercontent.com/godban/browsers-support-badges/master/src/images/firefox.png" alt="Firefox" width="16px" height="16px" />](http://godban.github.io/browsers-support-badges/)</br>Firefox | [<img src="https://raw.githubusercontent.com/godban/browsers-support-badges/master/src/images/chrome.png" alt="Chrome" width="16px" height="16px" />](http://godban.github.io/browsers-support-badges/)</br>Chrome | [<img src="https://raw.githubusercontent.com/godban/browsers-support-badges/master/src/images/safari.png" alt="Safari" width="16px" height="16px" />](http://godban.github.io/browsers-support-badges/)</br>Safari | [<img src="https://raw.githubusercontent.com/godban/browsers-support-badges/master/src/images/opera.png" alt="Opera" width="16px" height="16px" />](http://godban.github.io/browsers-support-badges/)</br>Opera | [<img src="https://raw.githubusercontent.com/godban/browsers-support-badges/master/src/images/vivaldi.png" alt="Vivaldi" width="16px" height="16px" />](http://godban.github.io/browsers-support-badges/)</br>Vivaldi |
+| --------- | --------- | --------- | --------- | --------- | --------- |
+| IE11, Edge| last 2 versions| last 2 versions| last 2 versions| last 2 versions| last 2 versions
+
+### Progressive enhancement: features
+Als feature heb ik toegevoegd dat hij automatisch filtert wanneer de input value veranderd. Hier is de API addEventlistner voor nodig. Omdat deze niet in alle browsers ondersteund wordt (98%), heb ik hier een feature detection voor aangemaakt. Wanneer deze aanwezig is wordt de submit knop weggehaald omdat deze niet meer nodig is en wordt er gekeken of de input value matched met een deel van de naam.
+
+Als tweede feature heb ik toegevoegd dat hij niet kijkt naar de hele string, maar alleen of het begin van de string klopt met de input value. Je begint immers met het zoeken van een naam altijd bij de eerste letters en je verwacht niet dat als je A intypt dat er dan allemaal mensen verschijnen die a's in hun naam hebben, maar alleen degene waarvan de naam met een A begint. Dit is mogelijk met de nieuwste ES6 feature String.protoype.startsWith. Hier heb ik ook een feature detection voor aangemaakt. Wanneer hij dit ondersteund zal hij de input value vergelijken met de eerste letters van alle contacten.
+
+### Accessibility: features
+
+Beoordelingscriteria
+- De code staat in een repository op GitHub
+- Er is een Readme toegevoegd met daarin beschreven:
+  - een beschrijving van de core functionality
+  - een beschrijving van de feature(s)/Browser Technologies
+  - welke browser de feature(s) wel/niet ondersteunen
+  - een beschrijving van de accessibility issues die zijn onderzocht
+- De demo is opgebouwd in 3 lagen, volgens het principe van Progressive Enhancement
+- De user experience van de demo is goed
+  - de leesbaarheidsregels zijn toegepast, contrast en kleuren kloppen
+  - het heeft een gebruiksvriendelijke interface, met gebruikmaking van affordance en feedback op de interactieve elementen
+- Student kan uitleggen wat Progressive Enhancement en Feature Detectie is en hoe dit toe te passen in Web Development
