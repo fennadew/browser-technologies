@@ -4,6 +4,7 @@
     <title>Contactlijst</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <link rel="manifest" href="/manifest.json">
 </head>
 <body>
 <section>
@@ -26,6 +27,11 @@
         <% } %>
     </ul>
 </section>
+<script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js');
+    }
+</script>
 <script src="/javascripts/main.js"></script>
 </body>
 </html>
