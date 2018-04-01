@@ -6,7 +6,8 @@
 
 ### Core functionality
 De gebruiker moet een lijst met contacten kunnen zien, hier op filteren en contacten bekijken.
-![screenreader](https://github.com/fennadew/browser-technologies/blob/deploy/public/images/pattern.png).
+
+![Pattern](https://github.com/fennadew/browser-technologies/blob/deploy/public/images/pattern.png).
 
 
 Ik heb gekozen voor Node.js zodat ik server side data kan ophalen en kan renderen.
