@@ -1,5 +1,6 @@
 body {
     padding: 0;
+    background: #536DFE;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -9,17 +10,6 @@ body {
 
 a {
     outline: none;
-}
-
-.mockup {
-    top: 15px;
-    position: absolute;
-    pointer-events: none;
-    display: block;
-    width: 350px;
-    left: 0;
-    right: 0;
-    margin: auto;
 }
 
 div {
@@ -65,32 +55,9 @@ header a {
 }
 
 #contacts {
-    overflow: scroll;
-    height: 542px;
     padding: 0;
     margin-top: 0;
     background: #FFF;
-}
-
-@supports ( pointer-events: none ) {
-   #contacts:before {
-        content: '';
-        z-index: 1;
-        display: block;
-        position: absolute;
-        top: 118px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        box-shadow: inset 0px 20px 30px -10px #FFF,
-        inset 0px -20px 30px -10px #FFF;
-        -webkit-box-shadow: inset 0px 20px 30px -10px #FFF,
-        inset 0px -20px 30px -10px #FFF;
-        -moz-box-shadow: inset 0px 20px 30px -10px #FFF,
-        inset 0px -20px 30px -10px #FFF;
-        height: 545px;
-        pointer-events: none;
-    }
 }
 
 li {
@@ -134,6 +101,8 @@ figure {
     border-radius: 50%;
     overflow: hidden;
     height: 240px;
+    width: 240px;
+    margin: 10px auto;
 }
 
 input[type=submit] {
@@ -155,15 +124,40 @@ ul {
     padding: 0;
 }
 
+ul ul a {
+    padding: 0 80px;
+}
+
 section {
     position: absolute;
     overflow: hidden;
+    background: #FFF;
     left: 0;
     right: 0;
-    width: 320px;
-    height: 661px;
-    margin: 20px auto 0;
+    width: 100%;
+    max-width: 600px;
+    min-height: 80vh;
+    margin: 20px auto 20px;
     border: 1px solid #f2f2f2;
+}
+
+@media screen and (max-width: 800px) {
+    section {
+        max-width: 500px;
+    }
+}
+@media screen and (max-width: 500px) {
+    body {
+        margin: 0;
+        background: #FFF;
+    }
+    section {
+        margin: 0;
+    }
+}
+
+#contacts > li > a {
+    font-weight: 400;
 }
 
 a {
@@ -173,7 +167,7 @@ a {
     padding: 0 16px 0 80px;
     color: #222;
     line-height: 60px;
-    font-weight: 300;
+    font-weight: 200;
     transition: background-color 200ms ease;
 }
 

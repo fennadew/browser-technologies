@@ -49,13 +49,23 @@ router.get('/', function (req, res) {
     res.render('index', {contacts: newData});
 });
 
-router.post('/', function(req, res) {
+router.get('/api', function (req, res) {
+    const selectedContact = newData.filter((obj) => {
+        return obj.link === req.query.href;
+    });
+    if (selectedContact.length > 0) {
+        res.json(selectedContact[0]);
+    } else {
+        res.json('error');
+    }});
+
+router.post('/', function (req, res) {
     const filterContacts = newData.filter((obj) => {
         let name = obj.name.toLowerCase();
         let input = req.body.name[0].toLowerCase();
         return name.startsWith(input);
-        });
-        res.render('index', {contacts: filterContacts});
+    });
+    res.render('index', {contacts: filterContacts});
 
     // res.send(req.body.name[0]);
 });
@@ -63,7 +73,7 @@ router.post('/', function(req, res) {
 router.get('/:name', function (req, res) {
     const selectedContact = newData.filter((obj) => {
         return obj.link === req.params.name;
-    })
+    });
     if (selectedContact.length > 0) {
         res.render('contact', {contact: selectedContact[0]});
     } else {
