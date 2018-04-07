@@ -7,8 +7,10 @@
 ### Core functionality
 De gebruiker moet een lijst met contacten kunnen zien, hier op filteren en contacten bekijken.
 
-![Pattern](https://github.com/fennadew/browser-technologies/blob/deploy/public/images/pattern.png).
-
+<details>
+  <summary><b>Pattern primer</b></summary>
+<img src="https://github.com/fennadew/browser-technologies/blob/deploy/public/images/pattern.png" alt="pattern primer">
+</details>
 
 Ik heb gekozen voor Node.js zodat ik server side data kan ophalen en kan renderen.
 
@@ -26,8 +28,8 @@ De gehele content bekijken + filteren is mogelijk op alle browsers. Het support 
 
 <details>
   <summary><b>Chrome 64 (Zonder javascript)</b></summary>
-![Chrome](https://github.com/fennadew/browser-technologies/blob/deploy/public/images/zonderjs.png).
-![Chrome](https://github.com/fennadew/browser-technologies/blob/deploy/public/images/zonderjs2.png).
+<img src="https://github.com/fennadew/browser-technologies/blob/deploy/public/images/zonderjs.png" alt="tested on chrome"> <br>
+<img src="https://github.com/fennadew/browser-technologies/blob/deploy/public/images/zonderjs2.png" alt="tested on chrome"> <br>
 </details>
 
 Getest in [Browserstack](https://www.browserstack.com)
@@ -43,7 +45,7 @@ Getest in [Browserstack](https://www.browserstack.com)
  
  <details>
   <summary><b>Screenreader</b></summary>
-![screenreader](https://github.com/fennadew/browser-technologies/blob/deploy/public/images/screenreader.png).
+<img src="https://github.com/fennadew/browser-technologies/blob/deploy/public/images/screenreader.png"  alt="tested on screenreader">
 </details>
 
 
