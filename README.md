@@ -1,5 +1,5 @@
 # Browser Technologies - Progressive Enhanced
-<b>Use case</b> <br>
+### Use case
 Ik wil in een lijst contacten kunnen filteren, en details kunnen bekijken
 
 ## :hammer: Core functionality
@@ -11,7 +11,7 @@ De gebruiker moet een lijst met contacten kunnen zien, hier op filteren en conta
 <img src="https://github.com/fennadew/browser-technologies/blob/deploy/public/images/pattern.png" alt="pattern primer">
 </details>
 
-#### Werkwijze
+### Werkwijze
 Ik heb gekozen voor Node.js zodat ik server side data kan ophalen en kan renderen.
 
 De basis is dan een form waar een naam kan worden ingetypt en gesubmit kan worden.
@@ -26,7 +26,7 @@ De gehele content bekijken + filteren is mogelijk op alle browsers. Het support 
 | --------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- |
 | IE7, IE8, IE9, IE10, IE11, Edge| last 2 versions| last 2 versions| last 2 versions| last 2 versions| last 2 versions| last 2 versions| last 2 versions
 
-#### Eigen tests
+### Eigen tests
 
 <details>
   <summary><b>Chrome 64 (Zonder javascript)</b></summary>
