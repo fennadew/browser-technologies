@@ -2,6 +2,15 @@
 ### Use case
 Ik wil in een lijst contacten kunnen filteren, en details kunnen bekijken
 
+
+### Feedback
+| Feedback                | Verbetering              |
+| ----------------------- |:------------------------| 
+| Terug knop wanneer je zoekt zonde javascript  | Terug knop toegevoegd na zoeken om weer terug te gaan naar alle contacten |
+| Extra feature erbij doen | Wanneer er op een contact wordt geklikt, schuiven de gegevens uit i.p.v dat je naar een nieuwe pagina gaat |  
+| Testen op mobile | Viewport meta tag toegevoegd en getest in devicelab |
+|  | Readme overzichtelijker gemaakt |
+
 ## :hammer: Core functionality
 De gebruiker moet een lijst met contacten kunnen zien, hier op filteren en contacten bekijken. 
 
