@@ -1,6 +1,6 @@
 # Browser Technologies - Progressive Enhanced
 ### Use case
-Ik wil in een lijst contacten kunnen filteren, en details kunnen bekijken
+Ik wil in een lijst contacten kunnen filteren, en details kunnen bekijken.
 
 
 ### Feedback
@@ -86,6 +86,7 @@ Getest in [Browserstack](https://www.browserstack.com)
 
 
 ## :wrench: Progressive enhancement: Feature 2
+Als tweede feature heb ik gezorgd dat als je op een contact klikt, de gegevens uitschuiven i.p.v dat je naar de contact pagina gaat. dit is veel overzichtelijker. Ik heb dit gedaan door midden van een API call naar de server. Je hebt hiervoor 
 
 #### Browsers support 
 
