@@ -1,8 +1,6 @@
-# Browser Technologies
-## Opdracht 3 - Progressive Enhanced Browser Technologies
-
-### Use case: <b>Ik wil in een lijst contacten kunnen filteren, en details kunnen bekijken</b>
-[Link naar protoype](https://contact-list-progressive.herokuapp.com/)
+# Browser Technologies - Opdracht 3 - Progressive Enhanced Browser Technologies
+#### Use case:
+Ik wil in een lijst contacten kunnen filteren, en details kunnen bekijken
 
 ### Core functionality
 De gebruiker moet een lijst met contacten kunnen zien, hier op filteren en contacten bekijken.
@@ -12,6 +10,7 @@ De gebruiker moet een lijst met contacten kunnen zien, hier op filteren en conta
 <img src="https://github.com/fennadew/browser-technologies/blob/deploy/public/images/pattern.png" alt="pattern primer">
 </details>
 
+#### Werkwijze
 Ik heb gekozen voor Node.js zodat ik server side data kan ophalen en kan renderen.
 
 De basis is dan een form waar een naam kan worden ingetypt en gesubmit kan worden.
@@ -25,6 +24,8 @@ De gehele content bekijken + filteren is mogelijk op alle browsers. Het support 
 | [<img src="https://raw.githubusercontent.com/godban/browsers-support-badges/master/src/images/edge.png" alt="IE / Edge" width="16px" height="16px" />](http://godban.github.io/browsers-support-badges/)</br>IE / Edge | [<img src="https://raw.githubusercontent.com/godban/browsers-support-badges/master/src/images/firefox.png" alt="Firefox" width="16px" height="16px" />](http://godban.github.io/browsers-support-badges/)</br>Firefox | [<img src="https://raw.githubusercontent.com/godban/browsers-support-badges/master/src/images/chrome.png" alt="Chrome" width="16px" height="16px" />](http://godban.github.io/browsers-support-badges/)</br>Chrome | [<img src="https://raw.githubusercontent.com/godban/browsers-support-badges/master/src/images/safari.png" alt="Safari" width="16px" height="16px" />](http://godban.github.io/browsers-support-badges/)</br>Safari | [<img src="https://raw.githubusercontent.com/godban/browsers-support-badges/master/src/images/opera.png" alt="Opera" width="16px" height="16px" />](http://godban.github.io/browsers-support-badges/)</br>Opera | [<img src="https://raw.githubusercontent.com/godban/browsers-support-badges/master/src/images/safari-ios.png" alt="iOS Safari" width="16px" height="16px" />](http://godban.github.io/browsers-support-badges/)</br>iOS Safari | [<img src="https://raw.githubusercontent.com/godban/browsers-support-badges/master/src/images/opera-mini.png" alt="Opera Mini" width="16px" height="16px" />](http://godban.github.io/browsers-support-badges/)</br>Opera Mini | [<img src="https://raw.githubusercontent.com/godban/browsers-support-badges/master/src/images/chrome-android.png" alt="Chrome for Android" width="16px" height="16px" />](http://godban.github.io/browsers-support-badges/)</br>Chrome for Android |
 | --------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- |
 | IE7, IE8, IE9, IE10, IE11, Edge| last 2 versions| last 2 versions| last 2 versions| last 2 versions| last 2 versions| last 2 versions| last 2 versions
+
+#### Eigen tests
 
 <details>
   <summary><b>Chrome 64 (Zonder javascript)</b></summary>
