@@ -34,7 +34,7 @@ Getest in [Browserstack](https://www.browserstack.com)
 
 <details>
   <summary><b>IE8</b></summary>
-![IE8](https://github.com/fennadew/browser-technologies/blob/deploy/public/images/ie8.png).
+<img src="https://github.com/fennadew/browser-technologies/blob/deploy/public/images/ie8.png">.
 </details>
 
 #### Accessibility
