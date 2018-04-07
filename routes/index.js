@@ -46,7 +46,7 @@ fetch('https://uinames.com/api/?amount=25&region=netherlands&ext')
 
 /* GET home page. */
 router.get('/', function (req, res) {
-    res.render('index', {contacts: newData});
+    res.render('index', {contacts: newData, search: false});
 });
 
 router.get('/api', function (req, res) {
@@ -65,7 +65,7 @@ router.post('/', function (req, res) {
         let input = req.body.name[0].toLowerCase();
         return name.startsWith(input);
     });
-    res.render('index', {contacts: filterContacts});
+    res.render('index', {contacts: filterContacts, search: true});
 
     // res.send(req.body.name[0]);
 });

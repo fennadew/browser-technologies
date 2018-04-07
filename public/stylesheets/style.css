@@ -60,10 +60,15 @@ header a {
     background: #FFF;
 }
 
+#contacts > li {
+    border-bottom: 1px #f2f2f2 solid;
+
+}
+
 li {
     line-height: 60px;
     list-style: none;
-    border-bottom: 1px #f2f2f2 solid;
+    border-bottom: 1px #FFF solid;
 }
 
 ul a img {
@@ -81,6 +86,7 @@ a span {
 
 aside {
     padding: 10px 16px;
+    height: 60px;
 }
 
 input {
@@ -91,6 +97,7 @@ input {
     font-size: 14px;
     outline: none;
     border: 1px solid #AAAAAA;
+    float: left;
 }
 
 input:hover, input:focus {
@@ -106,7 +113,8 @@ figure {
 }
 
 input[type=submit] {
-    width: 80px;
+    width: 28%;
+    margin-left: 2%;
     background: #536DFE;
     color: #FFF;
     border: 1px solid #536DFE;
@@ -128,6 +136,17 @@ ul ul a {
     padding: 0 80px;
 }
 
+a + ul {
+    height: 0;
+    overflow: hidden;
+    transition: height 300ms ease;
+}
+
+a.open + ul {
+    height: 120px;
+    transition: height 300ms ease;
+}
+
 section {
     position: absolute;
     overflow: hidden;
@@ -138,7 +157,6 @@ section {
     max-width: 600px;
     min-height: 80vh;
     margin: 20px auto 20px;
-    border: 1px solid #f2f2f2;
 }
 
 @media screen and (max-width: 800px) {
@@ -158,8 +176,27 @@ section {
 
 #contacts > li > a {
     font-weight: 400;
+    position: relative;
 }
 
+
+#contacts > li > a:before {
+    content: '';
+    right: 0;
+    height: 60px;
+    top: 0;
+    width: 44px;
+    position: absolute;
+    background-image: url("../images/next.png");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    transform: rotate(0deg);
+    transition: transform 200ms ease;
+}
+
+#contacts > li > a.open:before  {
+    transform: rotate(90deg);
+}
 a {
     position: relative;
     align-items: center;

@@ -20,7 +20,6 @@
                             var item = this.names[i];
                             item.addEventListener('click', (function (e) {
                                 return function (e) {
-                                    var pathName = this.href.split('/');
                                     loadContact(this);
                                     e.preventDefault();
                                 }
@@ -31,23 +30,22 @@
             }
         };
 
-        function loadContact(link){
+        function loadContact(link) {
             var pathName = link.href.split('/');
             var request = new XMLHttpRequest();
-            var requestURL = '/api?href='+  pathName[3];
-            request.open('GET', requestURL, true)
-            request.onload = function() {
-                console.log(request.status)
+            var requestURL = '/api?href=' + pathName[3];
+            request.open('GET', requestURL, true);
+            request.onload = function () {
                 if (request.status >= 200 && request.status < 400) {
                     // Success!
                     var data = JSON.parse(request.responseText);
                     renderContact(link, data);
                 } else {
-                    document.location.href = '/' + contactPath;
+                    document.location.href = '/' + pathName[3];
                 }
             };
-            request.onerror = function() {
-                document.location.href = '/' + contactPath;
+            request.onerror = function () {
+                document.location.href = '/' + pathName[3];
             };
             request.send();
 
@@ -56,13 +54,15 @@
         function renderContact(contactLink, details) {
             var liItem = contactLink.parentNode;
 
-            if (contactLink.className == 'open') {
-                var elem = document.querySelector('#contacts ul');
-                liItem.removeChild(elem);
-                contactLink.setAttribute('class', '');
-            } else {
-                contactLink.setAttribute('class', 'open');
+            if (contactLink.className === 'open') {
+                var elem = liItem.querySelector('ul');
 
+                contactLink.setAttribute('class', '');
+
+                setTimeout(function () {
+                    liItem.removeChild(elem);
+                }, 300);
+            } else {
                 var ul = document.createElement('ul');
 
                 var linkPhone = document.createElement('a');
@@ -83,6 +83,9 @@
                 liItem.appendChild(ul);
                 ul.appendChild(liOne);
                 ul.appendChild(liTwo);
+                setTimeout(function () {
+                    contactLink.setAttribute('class', 'open');
+                }, 100);
             }
         }
 

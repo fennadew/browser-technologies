@@ -10,6 +10,9 @@
 <body>
 <section>
     <header>
+        <%  if (search == true){ %>
+        <a href="/"><img src="/images/left-arrow.png" alt="back"></a>
+        <% } %>
         <h1>Contactlijst</h1>
     </header>
     <aside>
@@ -29,9 +32,9 @@
     </ul>
 </section>
 <script>
-    // if ('serviceWorker' in navigator) {
-    //     navigator.serviceWorker.register('/sw.js');
-    // }
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js');
+    }
 </script>
 <script src="/javascripts/main.js"></script>
 </body>
