@@ -86,17 +86,27 @@ Getest in [Browserstack](https://www.browserstack.com)
 
 
 ## :wrench: Progressive enhancement: Feature 2
-Als tweede feature heb ik gezorgd dat als je op een contact klikt, de gegevens uitschuiven i.p.v dat je naar de contact pagina gaat. dit is veel overzichtelijker. Ik heb dit gedaan door midden van een API call naar de server. Je hebt hiervoor 
+Als tweede feature heb ik gezorgd dat als je op een contact klikt, de gegevens uitschuiven i.p.v dat je naar de contact pagina gaat. dit is veel overzichtelijker. Ik heb dit gedaan door midden van een API call naar de server. Je hebt hiervoor een XMLHtttpRequest nodig. Via [Can I Use](https://caniuse.com/#search=xmlhttp) heb ik gekeken welke browsers deze supporten. Dit gaat tot IE10. Echter tijdens het testen werkte het op IE9 ook.
 
-#### Browsers support 
+Wanneer de browser XMLHttpRequest & en addEventlistner (deze is nodig wanneer men klikt) niet ondersteund, zal er een contact pagina geladen worden.
 
+#### Browsers support
+| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="IE / Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>IE / Edge | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Safari | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari-ios/safari-ios_48x48.png" alt="iOS Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>iOS Safari | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/samsung-internet/samsung-internet_48x48.png" alt="Samsung" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Samsung | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/opera/opera_48x48.png" alt="Opera" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Opera |
+| --------- | --------- | --------- | --------- | --------- | --------- | --------- |
+| IE9, IE10, IE11, Edge| last 2 versions| last 2 versions| last 2 versions| last 2 versions| last 2 versions| last 2 versions
 
 #### Eigen tests
 Getest in [Browserstack](https://www.browserstack.com)
 <details>
- <summary>Chrome 64:</summary>
-<img src="https://github.com/fennadew/browser-technologies/blob/deploy/public/images/metjs.png" alt="chrome">.
+ <summary>IE10:</summary>
+<img src="https://github.com/fennadew/browser-technologies/blob/deploy/public/images/ie10.png" alt="ie">.
 </details>
+
+<details>
+ <summary>Chrome 64:</summary>
+<img src="https://github.com/fennadew/browser-technologies/blob/deploy/public/images/chrom.png" alt="chrome">.
+</details>
+
 
 
 ## :eyeglasses: Accessibility
