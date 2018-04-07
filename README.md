@@ -40,43 +40,6 @@ De gehele content bekijken + filteren is mogelijk op alle browsers. Het support 
 <img src="https://github.com/fennadew/browser-technologies/blob/deploy/public/images/ie8.png">.
 </details>
 
-
-## Accessibility
-* <b>Mouse/Trackpad</b>: Op alle aanklikbare elementen zijn hover en focus states toegepast.
- De website is getest met een screenreader.
- 
- 
- <details>
-  <summary><b>Screenshot van screenreader</b></summary>
-<img src="https://github.com/fennadew/browser-technologies/blob/deploy/public/images/screenreader.png"  alt="tested on screenreader">
-</details>
-
-
-* <b>Custom fonts</b>: Er worden geen icon-fonts gebruikt en er wordt een fallback-lettertype gebruikt. Dit lettertype zie je wanneer de custom font niet kan worden geladen of custom fonts door de gebruiker zijn uitgeschakeld.
-Ik heb deze getest op aangepaste aangepaste lettertypen met de Chrome-extensie [force fonts](https://chrome.google.com/webstore/detail/force-font/iidenkflofaiinggabfmdjbomolidnie). Werkt hetzelfde zonder aangepaste lettertypen. Met de extensie kun je het aangepaste lettertype vervangen door het gewenste systeemlettertype zoals 'Arial'.
-
-
- <details>
-  <summary><b>Screenshot van test zonder custom font</b></summary>
-<img src="https://github.com/fennadew/browser-technologies/blob/deploy/public/images/customfonts.png"  alt="zonder custom font">
-</details>
-
-
-* <b>Images</b>: Alle images hebben een alt attribute. Deze hebben toegevoegde waarde wanneer deze door de screenreader wordt voorgelezen.
-
-* <b>Color</b>: Er is voornamelijk gebruik gemaakt van zwart en wit. Dit is goed te zien voor kleurenblinden.
-de focus state is grijs, waar de kleurenblinden dus ook geen last van zullen hebben. Het paars van de sumbit button en het de border van het input veldt is donker genoeg om genoeg contrast te bieden bij rood kleurenblindheid.
-
-* <b>JavaScript</b>: De core functionaliteit van de website werkt geheel zonder JavaScript
-
-* <b>Broadband internet</b>: Er is een service worker toegevoegd aan de website. Wanneer de pagina al bezocht is (en dus gecached) is de laat tijd on- en offline 175ms. Super snel dus!
-
-
- <details>
-  <summary><b>Screenshot van service worker</b></summary>
-<img src="https://github.com/fennadew/browser-technologies/blob/deploy/public/images/servicework.png"  alt="service worker">
-</details>
-
 ## :wrench: Progressive enhancement: features
 
 #### Feature 1
@@ -117,3 +80,38 @@ of support niet ondersteunen, geen boxshadow kunnen zien. Hier heb ik [Mozilla d
 
 ![Chrome](https://github.com/fennadew/browser-technologies/blob/deploy/public/images/blur.png).
 
+## :eyeglasses: Accessibility
+* <b>Mouse/Trackpad</b>: Op alle aanklikbare elementen zijn hover en focus states toegepast.
+ De website is getest met een screenreader.
+ 
+ 
+ <details>
+  <summary><b>Screenshot van screenreader</b></summary>
+<img src="https://github.com/fennadew/browser-technologies/blob/deploy/public/images/screenreader.png"  alt="tested on screenreader">
+</details>
+
+
+* <b>Custom fonts</b>: Er worden geen icon-fonts gebruikt en er wordt een fallback-lettertype gebruikt. Dit lettertype zie je wanneer de custom font niet kan worden geladen of custom fonts door de gebruiker zijn uitgeschakeld.
+Ik heb deze getest op aangepaste aangepaste lettertypen met de Chrome-extensie [force fonts](https://chrome.google.com/webstore/detail/force-font/iidenkflofaiinggabfmdjbomolidnie). Werkt hetzelfde zonder aangepaste lettertypen. Met de extensie kun je het aangepaste lettertype vervangen door het gewenste systeemlettertype zoals 'Arial'.
+
+
+ <details>
+  <summary><b>Screenshot van test zonder custom font</b></summary>
+<img src="https://github.com/fennadew/browser-technologies/blob/deploy/public/images/customfonts.png"  alt="zonder custom font">
+</details>
+
+
+* <b>Images</b>: Alle images hebben een alt attribute. Deze hebben toegevoegde waarde wanneer deze door de screenreader wordt voorgelezen.
+
+* <b>Color</b>: Er is voornamelijk gebruik gemaakt van zwart en wit. Dit is goed te zien voor kleurenblinden.
+de focus state is grijs, waar de kleurenblinden dus ook geen last van zullen hebben. Het paars van de sumbit button en het de border van het input veldt is donker genoeg om genoeg contrast te bieden bij rood kleurenblindheid.
+
+* <b>JavaScript</b>: De core functionaliteit van de website werkt geheel zonder JavaScript
+
+* <b>Broadband internet</b>: Er is een service worker toegevoegd aan de website. Wanneer de pagina al bezocht is (en dus gecached) is de laat tijd on- en offline 175ms. Super snel dus!
+
+
+ <details>
+  <summary><b>Screenshot van service worker</b></summary>
+<img src="https://github.com/fennadew/browser-technologies/blob/deploy/public/images/servicework.png"  alt="service worker">
+</details>
