@@ -1,12 +1,13 @@
-# Browser Technologies - Opdracht 3 - Progressive Enhanced Browser Technologies
-#### Use case:
+# Browser Technologies - Progressive Enhanced
+<b>Use case</b> <br>
 Ik wil in een lijst contacten kunnen filteren, en details kunnen bekijken
 
-### Core functionality
-De gebruiker moet een lijst met contacten kunnen zien, hier op filteren en contacten bekijken.
+## Core functionality
+De gebruiker moet een lijst met contacten kunnen zien, hier op filteren en contacten bekijken. 
+
 
 <details>
-  <summary><b>Pattern primer</b></summary>
+ <summary>Pattern primer</summary>
 <img src="https://github.com/fennadew/browser-technologies/blob/deploy/public/images/pattern.png" alt="pattern primer">
 </details>
 
