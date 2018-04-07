@@ -38,7 +38,7 @@ De gehele content bekijken + filteren is mogelijk op alle browsers. Het support 
 ### Eigen tests
 
 <details>
-  <summary>Chrome 64 (Zonder javascript)</summary>
+  <summary>Screenshot test Chrome 64 (Zonder javascript)</summary>
 <img src="https://github.com/fennadew/browser-technologies/blob/deploy/public/images/zonderjs.png" alt="tested on chrome"> <br>
 <img src="https://github.com/fennadew/browser-technologies/blob/deploy/public/images/zonderjs2.png" alt="tested on chrome"> <br>
 </details>
@@ -66,6 +66,8 @@ Getest in [Browserstack](https://www.browserstack.com)
 </details>
 <p></p>
 
+
+### Extra feature detection
 Ik heb een extra feature detection hier aan toegevoegd. Ik wil namelijk dat hij niet kijkt naar de hele string, maar alleen of het begin van de string klopt met de input value. Je begint immers met het zoeken van een naam altijd bij de eerste letters en je verwacht niet dat als je A intypt dat er dan allemaal mensen verschijnen die a's in hun naam hebben, maar alleen degene waarvan de naam met een A begint. Dit is mogelijk met de nieuwste ES6 feature String.protoype.startsWith. Ik heb deze onderzocht bij [Mozilla developers](https://developer.mozilla.org/nl/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith). Hier heb ik ook een feature detection voor aangemaakt. Wanneer hij dit ondersteund zal hij de input value vergelijken met de eerste letters van alle contacten.
 
 #### Browsers support <sub><sup><sub><sub>made by <a href="https://godban.github.io">godban</a></sub></sub></sup></sub>
