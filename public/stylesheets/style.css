@@ -123,6 +123,10 @@ input[type=submit] {
     transition: all 200ms ease;
 }
 
+input[type=submit]:after {
+    clear: both;
+}
+
 input[type=submit]:focus, input[type=submit]:hover {
     color: #536DFE;
     background: #FFF;
