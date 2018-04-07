@@ -49,9 +49,7 @@ De gehele content bekijken + filteren is mogelijk op alle browsers. Het support 
 <img src="https://github.com/fennadew/browser-technologies/blob/deploy/public/images/ie8.png">.
 </details>
 
-## :wrench: Progressive enhancement: features
-
-### Feature 1
+## :wrench: Progressive enhancement: Feature 1
 Als feature heb ik toegevoegd dat hij automatisch filtert wanneer de input value veranderd. Hier is de API addEventlistner voor nodig. Ik heb deze feature onderzocht op [can I use](caniuse.com). Omdat deze niet in alle browsers ondersteund wordt (98%), heb ik hier een feature detection voor aangemaakt. Wanneer deze aanwezig is wordt de submit knop weggehaald omdat deze niet meer nodig is en wordt er gekeken of de input value matched met een deel van de naam.
 
 ### Browsers support <sub><sup><sub><sub>made by <a href="https://godban.github.io">godban</a></sub></sub></sup></sub>
@@ -67,7 +65,7 @@ Getest in [Browserstack](https://www.browserstack.com)
 <img src="https://github.com/fennadew/browser-technologies/blob/deploy/public/images/ie9.png" alt="ie9">.
 </details>
 
-### Feature 2
+## :wrench: Progressive enhancement: Feature 2
 Als tweede feature heb ik toegevoegd dat hij niet kijkt naar de hele string, maar alleen of het begin van de string klopt met de input value. Je begint immers met het zoeken van een naam altijd bij de eerste letters en je verwacht niet dat als je A intypt dat er dan allemaal mensen verschijnen die a's in hun naam hebben, maar alleen degene waarvan de naam met een A begint. Dit is mogelijk met de nieuwste ES6 feature String.protoype.startsWith. Ik heb deze onderzocht bij [Mozilla developers](https://developer.mozilla.org/nl/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith). Hier heb ik ook een feature detection voor aangemaakt. Wanneer hij dit ondersteund zal hij de input value vergelijken met de eerste letters van alle contacten.
 
 #### Browsers support <sub><sup><sub><sub>made by <a href="https://godban.github.io">godban</a></sub></sub></sup></sub>
