@@ -24,21 +24,28 @@ De gehele content bekijken + filteren is mogelijk op alle browsers. Het support 
 | --------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- |
 | IE7, IE8, IE9, IE10, IE11, Edge| last 2 versions| last 2 versions| last 2 versions| last 2 versions| last 2 versions| last 2 versions| last 2 versions
 
-* <b>Chrome 64 (Zonder javascript)</b>
-
+<details>
+  <summary><b>Chrome 64 (Zonder javascript)</b></summary>
 ![Chrome](https://github.com/fennadew/browser-technologies/blob/deploy/public/images/zonderjs.png).
 ![Chrome](https://github.com/fennadew/browser-technologies/blob/deploy/public/images/zonderjs2.png).
+</details>
 
 Getest in [Browserstack](https://www.browserstack.com)
-* <b>IE8:</b>
 
+<details>
+  <summary><b>IE8</b></summary>
 ![IE8](https://github.com/fennadew/browser-technologies/blob/deploy/public/images/ie8.png).
+</details>
 
 #### Accessibility
 * <b>Mouse/Trackpad</b>: Op alle aanklikbare elementen zijn hover en focus states toegepast.
  De website is getest met een screenreader.
-
+ 
+ <details>
+  <summary><b>Screenreader</b></summary>
 ![screenreader](https://github.com/fennadew/browser-technologies/blob/deploy/public/images/screenreader.png).
+</details>
+
 
 * <b>Custom fonts</b>: Er worden geen icon-fonts gebruikt en er wordt een fallback-lettertype gebruikt. Dit lettertype zie je wanneer de custom font niet kan worden geladen of custom fonts door de gebruiker zijn uitgeschakeld.
 Ik heb deze getest op aangepaste aangepaste lettertypen met de Chrome-extensie [force fonts](https://chrome.google.com/webstore/detail/force-font/iidenkflofaiinggabfmdjbomolidnie). Werkt hetzelfde zonder aangepaste lettertypen. Met de extensie kun je het aangepaste lettertype vervangen door het gewenste systeemlettertype zoals 'Arial'.
