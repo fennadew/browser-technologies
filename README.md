@@ -83,17 +83,15 @@ of support niet ondersteunen, geen boxshadow kunnen zien. Hier heb ik [Mozilla d
 ## :eyeglasses: Accessibility
 * <b>Mouse/Trackpad</b>: Op alle aanklikbare elementen zijn hover en focus states toegepast.
  De website is getest met een screenreader.
- 
  <details>
   <summary>Screenshot van screenreader</summary>
 <img src="https://github.com/fennadew/browser-technologies/blob/deploy/public/images/screenreader.png"  alt="tested on screenreader">
 </details>
 
 
+
 * <b>Custom fonts</b>: Er worden geen icon-fonts gebruikt en er wordt een fallback-lettertype gebruikt. Dit lettertype zie je wanneer de custom font niet kan worden geladen of custom fonts door de gebruiker zijn uitgeschakeld.
 Ik heb deze getest op aangepaste aangepaste lettertypen met de Chrome-extensie [force fonts](https://chrome.google.com/webstore/detail/force-font/iidenkflofaiinggabfmdjbomolidnie). Werkt hetzelfde zonder aangepaste lettertypen. Met de extensie kun je het aangepaste lettertype vervangen door het gewenste systeemlettertype zoals 'Arial'.
-
-
  <details>
   <summary>Screenshot van test zonder custom font</summary>
 <img src="https://github.com/fennadew/browser-technologies/blob/deploy/public/images/customfonts.png"  alt="zonder custom font">
@@ -108,7 +106,6 @@ de focus state is grijs, waar de kleurenblinden dus ook geen last van zullen heb
 * <b>JavaScript</b>: De core functionaliteit van de website werkt geheel zonder JavaScript
 
 * <b>Broadband internet</b>: Er is een service worker toegevoegd aan de website. Wanneer de pagina al bezocht is (en dus gecached) is de laat tijd on- en offline 175ms. Super snel dus!
-
 
  <details>
   <summary>Screenshot van service worker</summary>
