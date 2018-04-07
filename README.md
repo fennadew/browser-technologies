@@ -36,16 +36,18 @@ De gehele content bekijken + filteren is mogelijk op alle browsers. Het support 
 
 <details>
   <summary><b>IE8</b></summary>
- <p>Getest in [Browserstack](https://www.browserstack.com)</p>
+ <p>Getest in <a href="https://www.browserstack.com">Browserstack]</a></p>
 <img src="https://github.com/fennadew/browser-technologies/blob/deploy/public/images/ie8.png">.
 </details>
 
-### Accessibility
+
+## Accessibility
 * <b>Mouse/Trackpad</b>: Op alle aanklikbare elementen zijn hover en focus states toegepast.
  De website is getest met een screenreader.
  
+ 
  <details>
-  <summary><b>Screenreader</b></summary>
+  <summary><b>Screenshot van screenreader</b></summary>
 <img src="https://github.com/fennadew/browser-technologies/blob/deploy/public/images/screenreader.png"  alt="tested on screenreader">
 </details>
 
@@ -53,7 +55,12 @@ De gehele content bekijken + filteren is mogelijk op alle browsers. Het support 
 * <b>Custom fonts</b>: Er worden geen icon-fonts gebruikt en er wordt een fallback-lettertype gebruikt. Dit lettertype zie je wanneer de custom font niet kan worden geladen of custom fonts door de gebruiker zijn uitgeschakeld.
 Ik heb deze getest op aangepaste aangepaste lettertypen met de Chrome-extensie [force fonts](https://chrome.google.com/webstore/detail/force-font/iidenkflofaiinggabfmdjbomolidnie). Werkt hetzelfde zonder aangepaste lettertypen. Met de extensie kun je het aangepaste lettertype vervangen door het gewenste systeemlettertype zoals 'Arial'.
 
-![custom](https://github.com/fennadew/browser-technologies/blob/deploy/public/images/customfonts.png).
+
+ <details>
+  <summary><b>Screenshot van test zonder custom font</b></summary>
+<img src="https://github.com/fennadew/browser-technologies/blob/deploy/public/images/customfonts.png"  alt="zonder custom font">
+</details>
+
 
 * <b>Images</b>: Alle images hebben een alt attribute. Deze hebben toegevoegde waarde wanneer deze door de screenreader wordt voorgelezen.
 
@@ -64,8 +71,11 @@ de focus state is grijs, waar de kleurenblinden dus ook geen last van zullen heb
 
 * <b>Broadband internet</b>: Er is een service worker toegevoegd aan de website. Wanneer de pagina al bezocht is (en dus gecached) is de laat tijd on- en offline 175ms. Super snel dus!
 
-![Serviceworker](https://github.com/fennadew/browser-technologies/blob/deploy/public/images/servicework.png).
 
+ <details>
+  <summary><b>Screenshot van service worker</b></summary>
+<img src="https://github.com/fennadew/browser-technologies/blob/deploy/public/images/servicework.png"  alt="service worker">
+</details>
 
 ## :wrench: Progressive enhancement: features
 
