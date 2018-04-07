@@ -2,7 +2,7 @@
 <b>Use case</b> <br>
 Ik wil in een lijst contacten kunnen filteren, en details kunnen bekijken
 
-## Core functionality
+## :hammer: Core functionality
 De gebruiker moet een lijst met contacten kunnen zien, hier op filteren en contacten bekijken. 
 
 
@@ -34,14 +34,13 @@ De gehele content bekijken + filteren is mogelijk op alle browsers. Het support 
 <img src="https://github.com/fennadew/browser-technologies/blob/deploy/public/images/zonderjs2.png" alt="tested on chrome"> <br>
 </details>
 
-Getest in [Browserstack](https://www.browserstack.com)
-
 <details>
   <summary><b>IE8</b></summary>
+ <p>Getest in [Browserstack](https://www.browserstack.com)</p>
 <img src="https://github.com/fennadew/browser-technologies/blob/deploy/public/images/ie8.png">.
 </details>
 
-#### Accessibility
+### Accessibility
 * <b>Mouse/Trackpad</b>: Op alle aanklikbare elementen zijn hover en focus states toegepast.
  De website is getest met een screenreader.
  
@@ -68,7 +67,7 @@ de focus state is grijs, waar de kleurenblinden dus ook geen last van zullen heb
 ![Serviceworker](https://github.com/fennadew/browser-technologies/blob/deploy/public/images/servicework.png).
 
 
-### Progressive enhancement: features
+## :wrench: Progressive enhancement: features
 
 #### Feature 1
 Als feature heb ik toegevoegd dat hij automatisch filtert wanneer de input value veranderd. Hier is de API addEventlistner voor nodig. Ik heb deze feature onderzocht op [can I use](caniuse.com). Omdat deze niet in alle browsers ondersteund wordt (98%), heb ik hier een feature detection voor aangemaakt. Wanneer deze aanwezig is wordt de submit knop weggehaald omdat deze niet meer nodig is en wordt er gekeken of de input value matched met een deel van de naam.
