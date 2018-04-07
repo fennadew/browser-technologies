@@ -44,7 +44,7 @@ De gehele content bekijken + filteren is mogelijk op alle browsers. Het support 
 </details>
 
 <details>
-  <summary>IE8</summary>
+  <summary>Screenshot test IE8</summary>
  <p>Getest in <a href="https://www.browserstack.com">Browserstack]</a></p>
 <img src="https://github.com/fennadew/browser-technologies/blob/deploy/public/images/ie8.png">.
 </details>
@@ -61,9 +61,10 @@ Als feature heb ik toegevoegd dat hij automatisch filtert wanneer de input value
 ### Eigen tests
 Getest in [Browserstack](https://www.browserstack.com)
 <details>
- <summary>IE9:</summary>
+ <summary>Screenshot test IE9</summary>
 <img src="https://github.com/fennadew/browser-technologies/blob/deploy/public/images/ie9.png" alt="ie9">.
 </details>
+<p></p>
 
 Ik heb een extra feature detection hier aan toegevoegd. Ik wil namelijk dat hij niet kijkt naar de hele string, maar alleen of het begin van de string klopt met de input value. Je begint immers met het zoeken van een naam altijd bij de eerste letters en je verwacht niet dat als je A intypt dat er dan allemaal mensen verschijnen die a's in hun naam hebben, maar alleen degene waarvan de naam met een A begint. Dit is mogelijk met de nieuwste ES6 feature String.protoype.startsWith. Ik heb deze onderzocht bij [Mozilla developers](https://developer.mozilla.org/nl/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith). Hier heb ik ook een feature detection voor aangemaakt. Wanneer hij dit ondersteund zal hij de input value vergelijken met de eerste letters van alle contacten.
 
