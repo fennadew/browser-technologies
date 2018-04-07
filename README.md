@@ -84,9 +84,8 @@ of support niet ondersteunen, geen boxshadow kunnen zien. Hier heb ik [Mozilla d
 * <b>Mouse/Trackpad</b>: Op alle aanklikbare elementen zijn hover en focus states toegepast.
  De website is getest met een screenreader.
  
- 
  <details>
-  <summary><b>Screenshot van screenreader</b></summary>
+  <summary>Screenshot van screenreader</summary>
 <img src="https://github.com/fennadew/browser-technologies/blob/deploy/public/images/screenreader.png"  alt="tested on screenreader">
 </details>
 
@@ -96,7 +95,7 @@ Ik heb deze getest op aangepaste aangepaste lettertypen met de Chrome-extensie [
 
 
  <details>
-  <summary><b>Screenshot van test zonder custom font</b></summary>
+  <summary>Screenshot van test zonder custom font</summary>
 <img src="https://github.com/fennadew/browser-technologies/blob/deploy/public/images/customfonts.png"  alt="zonder custom font">
 </details>
 
@@ -112,6 +111,6 @@ de focus state is grijs, waar de kleurenblinden dus ook geen last van zullen heb
 
 
  <details>
-  <summary><b>Screenshot van service worker</b></summary>
+  <summary>Screenshot van service worker</summary>
 <img src="https://github.com/fennadew/browser-technologies/blob/deploy/public/images/servicework.png"  alt="service worker">
 </details>
