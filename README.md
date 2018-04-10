@@ -8,7 +8,7 @@ Ik wil in een lijst contacten kunnen filteren, en details kunnen bekijken.
 | ----------------------- |:------------------------| 
 | Terug knop wanneer je zoekt zonder javascript  | Terug knop toegevoegd na zoeken om weer terug te gaan naar alle contacten |
 | Extra feature erbij doen | Wanneer er op een contact wordt geklikt, schuiven de gegevens uit i.p.v dat je naar een nieuwe pagina gaat |  
-| Testen op mobile | Viewport meta tag toegevoegd en getest in devicelab |
+| Testen op mobile | Viewport meta tag toegevoegd, responsive gemaakt en getest in devicelab |
 |  | Readme overzichtelijker gemaakt |
 
 ## :hammer: Core functionality
@@ -41,6 +41,20 @@ De gehele content bekijken + filteren is mogelijk op alle browsers. Het support 
   <summary>Screenshot test Chrome 64 (Zonder javascript)</summary>
 <img src="https://github.com/fennadew/browser-technologies/blob/deploy/public/images/zonderjs.png" alt="tested on chrome"> <br>
 <img src="https://github.com/fennadew/browser-technologies/blob/deploy/public/images/zonderjs2.png" alt="tested on chrome"> <br>
+</details>
+
+<details>
+  <summary>Device lab Nokia</summary>
+<img src="https://github.com/fennadew/browser-technologies/blob/deploy/public/images/dev1.png" alt="tested on nokia"> <br>
+<img src="https://github.com/fennadew/browser-technologies/blob/deploy/public/images/dev2.png" alt="tested on nokia"> <br>
+ <img src="https://github.com/fennadew/browser-technologies/blob/deploy/public/images/dev3.png" alt="tested on nokia"> 
+</details>
+
+<details>
+  <summary>Device lab Samsung</summary>
+<img src="https://github.com/fennadew/browser-technologies/blob/deploy/public/images/dev4.png" alt="tested on samsung"> <br>
+<img src="https://github.com/fennadew/browser-technologies/blob/deploy/public/images/dev5.png" alt="tested on samsung"> <br>
+ <img src="https://github.com/fennadew/browser-technologies/blob/deploy/public/images/dev6.png" alt="tested on samsung">
 </details>
 
 <details>
