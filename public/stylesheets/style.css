@@ -201,6 +201,7 @@ section {
     transform: rotate(90deg);
 }
 a {
+    display: block;
     position: relative;
     align-items: center;
     text-decoration: none;
