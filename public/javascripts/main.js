@@ -3,6 +3,7 @@
         var app = {
             names: document.getElementById("contacts").getElementsByTagName("a"),
             init: function () {
+                //Feature detection for eventlistner
                 if (document.addEventListener) {
                     var form = document.getElementById('form-contacts');
                     var input = document.getElementById('input-name');
@@ -15,13 +16,14 @@
                         e.preventDefault();
                     });
 
+                    //Feature detection for API request
                     if (window.XMLHttpRequest) {
                         for (var i = 0; i < this.names.length; i++) {
                             var item = this.names[i];
                             item.addEventListener('click', (function (e) {
                                 return function (e) {
-                                    loadContact(this);
                                     e.preventDefault();
+                                    loadContact(this);
                                 }
                             })());
                         }
@@ -95,6 +97,7 @@
             for (var i = 0; i < app.names.length; i++) {
                 var name = app.names[i].innerText.toLowerCase();
 
+                //Feature detection for search begin letters of front name
                 if (!String.prototype.startsWith) {
                     if (name.indexOf(inputNew) > -1) {
                         app.names[i].parentNode.setAttribute('class', '')
